@@ -1,10 +1,9 @@
 body{
 margin:0;
 font-family:'Poppins',sans-serif;
-background:#f4fbf6;
 text-align:center;
-color:#2f4f4f;
-overflow-x:hidden;
+color:#333;
+scroll-behavior:smooth;
 }
 
 .envelope{
@@ -12,69 +11,96 @@ height:100vh;
 display:flex;
 justify-content:center;
 align-items:center;
-background:linear-gradient(135deg,#6fbf73,#2e8b57);
+background:linear-gradient(135deg,#0f9b0f,#00c853);
 color:white;
 }
 
-.letter{
+.card{
 background:white;
-color:#2f4f4f;
+color:#333;
 padding:40px;
 border-radius:20px;
-animation:fadeIn 1.5s;
+box-shadow:0 20px 40px rgba(0,0,0,0.3);
+animation:fadeIn 1.2s;
 }
 
 button,.btn{
-background:#2e8b57;
+background:#00c853;
 color:white;
 padding:12px 30px;
 border:none;
 border-radius:30px;
 cursor:pointer;
-margin-top:15px;
 text-decoration:none;
+margin-top:15px;
+display:inline-block;
 }
 
-.content{
+#content{
 display:none;
 }
 
 .hero{
-padding:80px 20px;
-background:linear-gradient(to bottom,#e6f5ea,white);
+height:100vh;
+background:url('https://images.unsplash.com/photo-1519681393784-d120267933ba') center/cover;
+position:relative;
+color:white;
+}
+
+.overlay{
+background:rgba(0,0,0,0.6);
+height:100%;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 }
 
 .countdown{
 font-size:24px;
-margin-top:20px;
 font-weight:bold;
+margin-top:20px;
 }
 
 .gallery-grid{
 display:flex;
-justify-content:center;
 gap:15px;
 flex-wrap:wrap;
+justify-content:center;
+padding:20px;
 }
 
 .gallery-grid img{
-width:200px;
+width:250px;
 border-radius:15px;
-box-shadow:0 10px 20px rgba(0,0,0,0.2);
+box-shadow:0 10px 20px rgba(0,0,0,0.3);
+transition:0.4s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
 }
 
 .music-btn{
 position:fixed;
 bottom:20px;
 right:20px;
-background:#2e8b57;
-color:white;
+background:#00c853;
 padding:15px;
 border-radius:50%;
 cursor:pointer;
+color:white;
+font-size:20px;
+box-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+
+footer{
+padding:20px;
+background:#f4f4f4;
+margin-top:40px;
 }
 
 @keyframes fadeIn{
-from{opacity:0}
-to{opacity:1}
+from{opacity:0;transform:translateY(20px);}
+to{opacity:1;transform:translateY(0);}
 }
