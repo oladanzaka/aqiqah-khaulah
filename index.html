@@ -3,68 +3,76 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aqiqah Khaulah</title>
+<title>Undangan Aqiqah Khaulah</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
+
 <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-<!-- MUSIC -->
 <audio id="bgMusic" loop>
-  <source src="assets/audio/music.mp3" type="audio/mpeg">
+<source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_5c8f6e3d8a.mp3?filename=islamic-background-112191.mp3" type="audio/mpeg">
 </audio>
 
 <div class="music-btn" onclick="toggleMusic()">🎵</div>
 
-<!-- ENVELOPE COVER -->
+<!-- ENVELOPE -->
 <div class="envelope" id="envelope">
-  <div class="letter">
-    <h3>Assalamu’alaikum</h3>
-    <p>Kepada Yth:</p>
-    <h2 id="guestName">Tamu Undangan</h2>
-    <button onclick="openInvite()">Buka Undangan</button>
-  </div>
+<div class="card">
+<h3>Assalamu’alaikum Warahmatullahi Wabarakatuh</h3>
+<p>Kepada Yth:</p>
+<h2 id="guestName">Tamu Undangan</h2>
+<button onclick="openInvite()">Buka Undangan</button>
+</div>
 </div>
 
-<!-- MAIN CONTENT -->
-<div class="content" id="content">
+<!-- CONTENT -->
+<div id="content">
 
 <section class="hero">
-  <h1 data-aos="fade-up">Aqiqah Khaulah</h1>
-  <p data-aos="fade-up">Rabu, 06 Mei 2026 • 10.00 WITA • Balikpapan</p>
-  <div id="countdown" class="countdown"></div>
+<div class="overlay">
+<h1 data-aos="fade-up">Aqiqah Khaulah</h1>
+<p data-aos="fade-up">Rabu, 06 Mei 2026 • 10.00 WITA</p>
+<div id="countdown" class="countdown"></div>
+</div>
+</section>
+
+<section data-aos="fade-up">
+<h2>Detail Acara</h2>
+<p>Lokasi: Balikpapan</p>
+<a class="btn" href="https://www.google.com/maps?q=-1.2062851215550312,116.85964248343242" target="_blank">
+Lihat Google Maps
+</a>
 </section>
 
 <section class="gallery" data-aos="fade-up">
-  <h2>Galeri</h2>
-  <div class="gallery-grid">
-    <img src="assets/images/gallery1.jpg">
-    <img src="assets/images/gallery2.jpg">
-  </div>
+<h2>Galeri</h2>
+<div class="gallery-grid">
+<img src="https://images.unsplash.com/photo-1601972599720-bb6f7e0a2e5d">
+<img src="https://images.unsplash.com/photo-1545235617-9465d2a55698">
+<img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70">
+</div>
 </section>
 
 <section data-aos="fade-up">
-  <h2>Lokasi</h2>
-  <a class="btn" href="https://www.google.com/maps?q=-1.2062851215550312,116.85964248343242" target="_blank">
-    Lihat Google Maps
-  </a>
+<h2>RSVP</h2>
+<form action="https://formsubmit.co/your-email@gmail.com" method="POST">
+<input type="text" name="Nama" placeholder="Nama Anda" required>
+<select name="Kehadiran">
+<option>Hadir</option>
+<option>Tidak Hadir</option>
+</select>
+<textarea name="Ucapan" placeholder="Tulis doa & ucapan"></textarea>
+<button type="submit">Kirim</button>
+</form>
 </section>
 
-<section data-aos="fade-up">
-  <h2>RSVP</h2>
-  <form action="https://formsubmit.co/EMAILKAMU@gmail.com" method="POST">
-    <input type="text" name="Nama" placeholder="Nama Anda" required>
-    <select name="Kehadiran">
-      <option>Hadir</option>
-      <option>Tidak Hadir</option>
-    </select>
-    <textarea name="Ucapan" placeholder="Tulis doa & ucapan"></textarea>
-    <button type="submit">Kirim</button>
-  </form>
-</section>
+<footer>
+<p>© 2026 Undangan Digital Khaulah</p>
+</footer>
 
 </div>
 
