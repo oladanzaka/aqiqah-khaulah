@@ -1,0 +1,80 @@
+body{
+margin:0;
+font-family:'Poppins',sans-serif;
+background:#f4fbf6;
+text-align:center;
+color:#2f4f4f;
+overflow-x:hidden;
+}
+
+.envelope{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+background:linear-gradient(135deg,#6fbf73,#2e8b57);
+color:white;
+}
+
+.letter{
+background:white;
+color:#2f4f4f;
+padding:40px;
+border-radius:20px;
+animation:fadeIn 1.5s;
+}
+
+button,.btn{
+background:#2e8b57;
+color:white;
+padding:12px 30px;
+border:none;
+border-radius:30px;
+cursor:pointer;
+margin-top:15px;
+text-decoration:none;
+}
+
+.content{
+display:none;
+}
+
+.hero{
+padding:80px 20px;
+background:linear-gradient(to bottom,#e6f5ea,white);
+}
+
+.countdown{
+font-size:24px;
+margin-top:20px;
+font-weight:bold;
+}
+
+.gallery-grid{
+display:flex;
+justify-content:center;
+gap:15px;
+flex-wrap:wrap;
+}
+
+.gallery-grid img{
+width:200px;
+border-radius:15px;
+box-shadow:0 10px 20px rgba(0,0,0,0.2);
+}
+
+.music-btn{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#2e8b57;
+color:white;
+padding:15px;
+border-radius:50%;
+cursor:pointer;
+}
+
+@keyframes fadeIn{
+from{opacity:0}
+to{opacity:1}
+}
